@@ -468,7 +468,10 @@ mark,
 
 .img-fluid {
   max-width: 100%;
-  height: auto;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .img-thumbnail {
@@ -593,6 +596,7 @@ pre code {
   flex-wrap: wrap;
   margin-right: -0.75rem;
   margin-left: -0.75rem;
+  margin-bottom: 5rem;
 }
 
 .no-gutters {
@@ -10237,7 +10241,6 @@ body {
   .projects-section .featured-text {
     padding: 0 0 0 2rem;
     border-left: 0.5rem solid #64a19d;
-    margin-left: -5srem;
   }
 }
 .projects-section .project-text {
