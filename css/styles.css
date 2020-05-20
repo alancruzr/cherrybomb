@@ -51,7 +51,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -5669,7 +5669,7 @@ a.close.disabled {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -10237,6 +10237,52 @@ body {
 .projects-section .featured-text {
   padding: 2rem;
 }
+
+.product-shopnow{
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.product-descrip{
+  margin-top: 7rem;
+}
+
+
+@media (max-width: 768px) {
+  .product-shopnow{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: -5rem;
+
+  }
+
+  .cherrymobile{
+    margin-top: -4rem;
+  }
+
+  .product-descrip{
+    margin-top: -2rem;
+  }
+
+
+}
+@media (min-width: 992px) {
+
+
+}
+
+
+
+
+
+
+
+
+
+
 @media (min-width: 992px) {
   .projects-section .featured-text {
     padding: 0 0 0 2rem;
@@ -10259,7 +10305,7 @@ body {
 }
 
 .signup-section {
-  padding: 10rem 0;
+  padding: 3em 0;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000000 100%), url("../assets/img/bg-signup.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -10275,6 +10321,16 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.15rem;
   border: 0;
+}
+
+.contactus{
+  display: block;
+  font-family: 'Open Sans';
+  font-size: 2.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: white;
 }
 
 .contact-section {

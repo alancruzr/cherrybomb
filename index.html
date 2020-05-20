@@ -11,7 +11,9 @@
         <script src="https://use.fontawesome.com/releases/v5.12.1/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,700&display=swap" rel="stylesheet">
+        <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css"
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
@@ -202,7 +204,7 @@
       "total": "Total",
       "empty": "Tu carrito de compras está vacío",
       "notice": "",
-      "button": "Comprar Ahora"
+      "button": "Agregar al Carrito"
     },
     "googleFonts": [
       "Open Sans"
@@ -250,9 +252,214 @@
                     <div class="col-xl-4 col-lg-5">
                         <div class="featured-text text-center text-lg-left">
                             <h4>Una explosión de Coffee Cherries en cada taza</h4>
-                            <p class="text-black-50 mb-0">Descubre todo el sabor que proviene de un café cuidadosamente producido en la región de Pluma Hidalgo en la Sierra Madre del Sur de Oaxaca, México.</p>
-                            
+                            <p class="text-black-50 mb-0">Descubre todo el sabor que proviene de un café cuidadosamente producido en la región de Pluma Hidalgo en la Sierra Madre del Sur de Oaxaca, México.
+
+
+
+                              </p>
+
+
+
                         </div>
+                        <div id='product-component-1589940308392' style="display:block; margin-left:auto; margin-right:auto;"></div>
+<script type="text/javascript">
+/*<![CDATA[*/
+(function () {
+  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+  if (window.ShopifyBuy) {
+    if (window.ShopifyBuy.UI) {
+      ShopifyBuyInit();
+    } else {
+      loadScript();
+    }
+  } else {
+    loadScript();
+  }
+  function loadScript() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = scriptURL;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    script.onload = ShopifyBuyInit;
+  }
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: 'cafebrujula.myshopify.com',
+      storefrontAccessToken: 'dd7d09d16c102d35ab470a54619888d1',
+    });
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('product', {
+        id: '4531091800113',
+        node: document.getElementById('product-component-1589940308392'),
+        moneyFormat: '%24%20%7B%7Bamount_no_decimals%7D%7D',
+        options: {
+  "product": {
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "calc(25% - 20px)",
+          "margin-left": "20px",
+          "margin-bottom": "50px"
+        }
+      },
+      "title": {
+        "color": "#000000"
+      },
+      "button": {
+        "font-family": "Open Sans, sans-serif",
+        "font-size": "18px",
+        "padding-top": "17px",
+        "padding-bottom": "17px",
+        ":hover": {
+          "background-color": "#71b4b1"
+        },
+        "background-color": "#7dc8c5",
+        ":focus": {
+          "background-color": "#71b4b1"
+        },
+        "border-radius": "6px",
+        "padding-left": "7px",
+        "padding-right": "7px"
+      },
+      "quantityInput": {
+        "font-size": "18px",
+        "padding-top": "17px",
+        "padding-bottom": "17px"
+      },
+      "price": {
+        "color": "#000000"
+      },
+      "compareAt": {
+        "color": "#000000"
+      },
+      "unitPrice": {
+        "color": "#000000"
+      },
+      "description": {
+        "font-size": "15px",
+        "color": "#000000"
+      }
+    },
+    "contents": {
+      "img": false,
+      "title": false,
+      "price": false
+    },
+    "text": {
+      "button": "Agregar al Carrito"
+    },
+    "googleFonts": [
+      "Open Sans"
+    ]
+  },
+  "productSet": {
+    "styles": {
+      "products": {
+        "@media (min-width: 601px)": {
+          "margin-left": "-20px"
+        }
+      }
+    }
+  },
+  "modalProduct": {
+    "contents": {
+      "img": false,
+      "imgWithCarousel": true,
+      "button": false,
+      "buttonWithQuantity": true
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0px",
+          "margin-bottom": "0px"
+        }
+      },
+      "button": {
+        "font-family": "Open Sans, sans-serif",
+        "font-size": "18px",
+        "padding-top": "17px",
+        "padding-bottom": "17px",
+        ":hover": {
+          "background-color": "#71b4b1"
+        },
+        "background-color": "#7dc8c5",
+        ":focus": {
+          "background-color": "#71b4b1"
+        },
+        "border-radius": "6px",
+        "padding-left": "7px",
+        "padding-right": "7px"
+      },
+      "quantityInput": {
+        "font-size": "18px",
+        "padding-top": "17px",
+        "padding-bottom": "17px"
+      }
+    },
+    "googleFonts": [
+      "Open Sans"
+    ],
+    "text": {
+      "button": "Add to cart"
+    }
+  },
+  "cart": {
+    "styles": {
+      "button": {
+        "font-family": "Open Sans, sans-serif",
+        "font-size": "18px",
+        "padding-top": "17px",
+        "padding-bottom": "17px",
+        ":hover": {
+          "background-color": "#71b4b1"
+        },
+        "background-color": "#7dc8c5",
+        ":focus": {
+          "background-color": "#71b4b1"
+        },
+        "border-radius": "6px"
+      }
+    },
+    "text": {
+      "title": "Carrito de Compras",
+      "total": "Total",
+      "empty": "Tu carrito de compras está vacío",
+      "notice": "",
+      "button": "Comprar Ahora"
+    },
+    "googleFonts": [
+      "Open Sans"
+    ]
+  },
+  "toggle": {
+    "styles": {
+      "toggle": {
+        "font-family": "Open Sans, sans-serif",
+        "background-color": "#7dc8c5",
+        ":hover": {
+          "background-color": "#71b4b1"
+        },
+        ":focus": {
+          "background-color": "#71b4b1"
+        }
+      },
+      "count": {
+        "font-size": "18px"
+      }
+    },
+    "googleFonts": [
+      "Open Sans"
+    ]
+  }
+},
+      });
+    });
+  }
+})();
+/*]]>*/
+</script>
                     </div>
                 </div>
                 <!-- Project One Row-->
@@ -288,18 +495,227 @@
 
                 </div>
 
+
+                <div class="product-shopnow">  <img src="assets/img/product-package.png" alt="Cherry-Bomb-Packaging">
+                  <div class="">
+      <p class="product-descrip">        <h2 class="cherrymobile">Cherry Bomb</h2>  <br>
+ Cereza reposada en frío en barriles herméticos con CO2 y secada lentamente en camas africanas bajo sombra.</p>   <p>Una verdadera explosión de café en cada taza.
+
+   <div id='product-component-1589943986137' style="display:block; margin-left:auto; margin-right: auto;"></div>
+   <script type="text/javascript">
+   /*<![CDATA[*/
+   (function () {
+     var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+     if (window.ShopifyBuy) {
+       if (window.ShopifyBuy.UI) {
+         ShopifyBuyInit();
+       } else {
+         loadScript();
+       }
+     } else {
+       loadScript();
+     }
+     function loadScript() {
+       var script = document.createElement('script');
+       script.async = true;
+       script.src = scriptURL;
+       (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+       script.onload = ShopifyBuyInit;
+     }
+     function ShopifyBuyInit() {
+       var client = ShopifyBuy.buildClient({
+         domain: 'cafebrujula.myshopify.com',
+         storefrontAccessToken: 'dd7d09d16c102d35ab470a54619888d1',
+       });
+       ShopifyBuy.UI.onReady(client).then(function (ui) {
+         ui.createComponent('product', {
+           id: '4531091800113',
+           node: document.getElementById('product-component-1589943986137'),
+           moneyFormat: '%24%20%7B%7Bamount_no_decimals%7D%7D',
+           options: {
+     "product": {
+       "styles": {
+         "product": {
+           "@media (min-width: 601px)": {
+             "max-width": "calc(25% - 20px)",
+             "margin-left": "20px",
+             "margin-bottom": "50px"
+           }
+         },
+         "title": {
+           "color": "#000000"
+         },
+         "button": {
+           "font-family": "Open Sans, sans-serif",
+           "font-size": "18px",
+           "padding-top": "17px",
+           "padding-bottom": "17px",
+           ":hover": {
+             "background-color": "#71b4b1"
+           },
+           "background-color": "#7dc8c5",
+           ":focus": {
+             "background-color": "#71b4b1"
+           },
+           "border-radius": "6px",
+           "padding-left": "7px",
+           "padding-right": "7px"
+         },
+         "quantityInput": {
+           "font-size": "18px",
+           "padding-top": "17px",
+           "padding-bottom": "17px"
+         },
+         "price": {
+           "color": "#000000"
+         },
+         "compareAt": {
+           "color": "#000000"
+         },
+         "unitPrice": {
+           "color": "#000000"
+         },
+         "description": {
+           "font-size": "15px",
+           "color": "#000000"
+         }
+       },
+       "contents": {
+         "img": false,
+         "title": false,
+         "price": false
+       },
+       "text": {
+         "button": "Agregar al Carrito"
+       },
+       "googleFonts": [
+         "Open Sans"
+       ]
+     },
+     "productSet": {
+       "styles": {
+         "products": {
+           "@media (min-width: 601px)": {
+             "margin-left": "-20px"
+           }
+         }
+       }
+     },
+     "modalProduct": {
+       "contents": {
+         "img": false,
+         "imgWithCarousel": true,
+         "button": false,
+         "buttonWithQuantity": true
+       },
+       "styles": {
+         "product": {
+           "@media (min-width: 601px)": {
+             "max-width": "100%",
+             "margin-left": "0px",
+             "margin-bottom": "0px"
+           }
+         },
+         "button": {
+           "font-family": "Open Sans, sans-serif",
+           "font-size": "18px",
+           "padding-top": "17px",
+           "padding-bottom": "17px",
+           ":hover": {
+             "background-color": "#71b4b1"
+           },
+           "background-color": "#7dc8c5",
+           ":focus": {
+             "background-color": "#71b4b1"
+           },
+           "border-radius": "6px",
+           "padding-left": "7px",
+           "padding-right": "7px"
+         },
+         "quantityInput": {
+           "font-size": "18px",
+           "padding-top": "17px",
+           "padding-bottom": "17px"
+         }
+       },
+       "googleFonts": [
+         "Open Sans"
+       ],
+       "text": {
+         "button": "Add to cart"
+       }
+     },
+     "cart": {
+       "styles": {
+         "button": {
+           "font-family": "Open Sans, sans-serif",
+           "font-size": "18px",
+           "padding-top": "17px",
+           "padding-bottom": "17px",
+           ":hover": {
+             "background-color": "#71b4b1"
+           },
+           "background-color": "#7dc8c5",
+           ":focus": {
+             "background-color": "#71b4b1"
+           },
+           "border-radius": "6px"
+         }
+       },
+       "text": {
+         "title": "Carrito de Compras",
+         "total": "Total",
+         "empty": "Tu carrito de compras está vacío",
+         "notice": "",
+         "button": "Comprar Ahora"
+       },
+       "googleFonts": [
+         "Open Sans"
+       ]
+     },
+     "toggle": {
+       "styles": {
+         "toggle": {
+           "font-family": "Open Sans, sans-serif",
+           "background-color": "#7dc8c5",
+           ":hover": {
+             "background-color": "#71b4b1"
+           },
+           ":focus": {
+             "background-color": "#71b4b1"
+           }
+         },
+         "count": {
+           "font-size": "18px"
+         }
+       },
+       "googleFonts": [
+         "Open Sans"
+       ]
+     }
+   },
+         });
+       });
+     }
+   })();
+   /*]]>*/
+   </script>
+
+
+  </p>
+ </div>
+
+
+
+
+ </div>
+
             </div>
         </section>
         <!-- Signup-->
         <section class="signup-section" id="signup">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-10 col-lg-8 mx-auto text-center">
-                        <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-                        <h2 class="text-white mb-5">¡Subscríbete para recibir nuestras últimas noticias!</h2>
-                        <form class="form-inline d-flex"><input class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" type="email" placeholder="Ingresa tu correo electrónico..." /><button class="btn btn-primary mx-auto" type="submit">Subscribirse</button></form>
-                    </div>
-                </div>
+                  <h1 class="contactus">Contacto</h1>
             </div>
         </section>
         <!-- Contact-->
